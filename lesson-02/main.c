@@ -1,6 +1,6 @@
-
-int main() {
     int counter = 0;
+int main() {
+int i=0;
     while (counter < 21) {
         ++counter;
         if ((counter & 1) != 0) {
