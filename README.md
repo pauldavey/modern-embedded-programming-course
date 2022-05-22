@@ -24,7 +24,7 @@ If you'd like to discuss this course or related subjects, plese use the ["Issues
 ---------------------------------------------------------------------
 # Contact Information
 
-[www.state-machine.com/quickstart](https://www.state-machine.com/quickstart)
+[www.state-machine.com/video-course](https://www.state-machine.com/video-course)
 
 
 

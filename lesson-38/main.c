@@ -151,11 +151,3 @@ int main() {
     OSStart(); /* start the uC/OS-II scheduler... */
     return 0; /* NOTE: the scheduler does NOT return */
 }
-
-/*******************************************************************************
-* NOTE1:
-* The call to uC/OS-II API OSTaskCreateExt() assumes that the pointer to the
-* top-of-stack (ptos) is at the end of the provided stack memory. This is
-* correct only for CPUs with downward-growing stack, but must be changed for
-* CPUs with upward-growing stack.
-*/

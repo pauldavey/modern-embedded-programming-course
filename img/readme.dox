@@ -1,0 +1,19 @@
+/*! @page arm-cm_dpp_nucleo-h743zi DPP on NUCLEO-H743ZI
+
+@image html bd_NUCLEO-H743ZI.jpg NUCLEO-H743ZI
+
+@ref dpp "Dining Philosophers Problem (DPP)" example for NUCLEO-H743ZI MCU (Cortex-M7).
+
+Demonstrated built-in kernels:
+- cooperative @ref qv with ARM-Clang, ARM-Keil, GNU-ARM (Makefile and Atollic TRUEstudio), and IAR-ARM toolchains
+- preemptive, run-to-completion @ref qk with ARM-Clang, ARM-Keil, GNU-ARM, and IAR-ARM toolchains
+- dual-mode (run-to-completion/blocking) @ref qxk with ARM-Clang, ARM-Keil, GNU-ARM, and IAR-ARM toolchains
+
+
+Features:
+- multiple active objects, including 5 instances of the same AO class (Philo)
+- extended threads (the QXK version)
+- [QP/Spy software tracing](https://www.state-machine.com/qtools/qpspy.html) using the virtual COM-port
+- bi-directional [QP/Spy](https://www.state-machine.com/qtools/qs.html#qs_rx) (sending commands to the target)
+
+*/

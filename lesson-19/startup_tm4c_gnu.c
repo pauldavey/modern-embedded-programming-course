@@ -42,7 +42,7 @@
  ---------------------------------------------------------------------------*/
 
 /* start and end of stack defined in the linker script ---------------------*/
-extern int __stack_start__;
+//extern int __stack_start__;
 extern int __stack_end__;
 
 /* Weak prototypes for error handlers --------------------------------------*/
@@ -59,7 +59,7 @@ __attribute__ ((naked)) void assert_failed(char const *module, int loc);
 /* Function prototypes -----------------------------------------------------*/
 void Default_Handler(void);  /* Default empty handler */
 void Reset_Handler(void);    /* Reset Handler */
-void SystemInit(void);       /* CMSIS system initialization */
+//void SystemInit(void);       /* CMSIS system initialization */
 
 /*----------------------------------------------------------------------------
 * weak aliases for each Exception handler to the Default_Handler.
@@ -385,8 +385,8 @@ void Reset_Handler(void) {
         software_init_hook(); /* this will also call __libc_init_array */
     }
     else {
-        /* call all static constructors in C++ (harmless in C programs) */
-        __libc_init_array();
+        /* call all static constructors in C++ (comment out in C programs) */
+        //__libc_init_array();
         (void)main(); /* application's entry point; should never return! */
     }
 
